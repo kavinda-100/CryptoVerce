@@ -8,6 +8,7 @@ import {DashboardLayOut, MainLayout} from "./components/layouts"
 import { ThemeProvider } from "@/context/ThemeProvider"
 
 function App() {
+
   return (
     <>
     <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">

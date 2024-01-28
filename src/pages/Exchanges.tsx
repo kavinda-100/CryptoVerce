@@ -34,7 +34,6 @@ const Exchanges = () => {
       .finally(() => setLoading(false));
   }, []);
 
-  console.log(exchanges);
   // scroll to top
   useEffect(() => {
     window.scrollTo(0, 0);
