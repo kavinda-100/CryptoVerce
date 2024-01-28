@@ -51,7 +51,7 @@ const CryptoSection = ({ isHome, amount }: CryptoSectionProps) => {
           {
             cryptos?.map((crypto: CryptoCurrenciesCardProps) => (
               <Link 
-              to={`/crypto/${crypto.uuid}`} 
+              to={`/dashboard/crypto/${crypto.uuid}`} 
               key={crypto.uuid}>
               <CryptoCurrenciesCard
                 key={crypto.uuid}

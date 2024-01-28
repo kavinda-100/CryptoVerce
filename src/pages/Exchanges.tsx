@@ -58,7 +58,7 @@ const Exchanges = () => {
         </TableHeader>
         <TableBody>
           {exchanges?.map((exchange) => (
-          <TableRow>
+          <TableRow key={exchange.id}>
             <TableCell>{exchange.id}. <span className=" font-bold font-montserrat" style={{color: exchange.color}}>{exchange.name}</span></TableCell>
             <TableCell>{exchange.TradeVolume}</TableCell>
             <TableCell>{exchange.market}</TableCell>

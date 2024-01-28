@@ -5,16 +5,20 @@ export const NavLinks = [
         path: '/'
     },
     {
+        name: 'Dashboard',
+        path: '/dashboard'
+    },
+    {
         name: 'CryptoCurrency',
-        path: '/crypto'
+        path: '/dashboard/crypto'
     },
     {
         name: 'Exchange',
-        path: '/exchanges'
+        path: '/dashboard/exchanges'
     },
     {
         name: 'News',
-        path: '/news'
+        path: '/dashboard/news'
     }
 ];
     
