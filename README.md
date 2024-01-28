@@ -1,4 +1,4 @@
-# CryptoVerce (Version 01)
+# CryptoVerce (Version 02)
 
 ## ReactJs, TypeScript, ReduxToolKit, TailwindCss, Recharts
 
