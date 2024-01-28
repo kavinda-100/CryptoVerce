@@ -1,20 +1,9 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
-// const options = {
-//   method: "GET",
-//   url: "https://bloomberg-market-and-financial-news.p.rapidapi.com/market/auto-complete",
-//   params: {
-//     query: "<REQUIRED>",
-//   },
-//   headers: {
-//     "X-RapidAPI-Key": "f9fc03e769msh36a5c7f47bf96eep172017jsn1b3b29142e1d",
-//     "X-RapidAPI-Host": "bloomberg-market-and-financial-news.p.rapidapi.com",
-//   },
-// };
 
 const headers = {
-  "X-RapidAPI-Key": "f9fc03e769msh36a5c7f47bf96eep172017jsn1b3b29142e1d",
-  "X-RapidAPI-Host": "bloomberg-market-and-financial-news.p.rapidapi.com",
+  "X-RapidAPI-Key": import.meta.env.API_KEY_COIN_NEWS_API,
+  "X-RapidAPI-Host": import.meta.env.API_HOST_KEY_COIN_NEWS_API,
 };
 
 const createRequest = (url: string, query: string) => ({
