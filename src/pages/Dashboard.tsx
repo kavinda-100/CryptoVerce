@@ -76,7 +76,7 @@ const Dashboard = () => {
             Top 10 Crypto Currencies
           </h1>
           <Link
-            to="/crypto"
+            to="/dashboard/crypto"
             className="font-montserrat font-semibold text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 text-balance ml-2"
           >
             show more
@@ -91,7 +91,7 @@ const Dashboard = () => {
             Latest Crypto News
           </h1>
           <Link
-            to="/news"
+            to="/dashboard/news"
             className="font-montserrat font-semibold text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 text-balance ml-2"
           >
             show more

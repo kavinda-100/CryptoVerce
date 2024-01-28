@@ -21,6 +21,22 @@ export const NavLinks = [
         path: '/dashboard/news'
     }
 ];
+
+export const MainNavLinks = [
+    {
+        name: 'Home',
+        path: '/'
+    },
+    {
+        name: 'Dashboard',
+        path: '/dashboard'
+    },
+    {
+        name: 'About',
+        path: '/about'
+    }
+];
+
     
 export const SkeletonMap = [
     {
