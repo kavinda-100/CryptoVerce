@@ -1,8 +1,11 @@
 import { logo } from "@/assets/images"
+import { Separator } from "./ui/separator"
 
 
 const Footer = () => {
   return (
+    <>
+      <Separator />
     <footer className="w-full flex flex-col lg:flex-row justify-center items-center gap-3 my-5">
         <div className="flex gap-3 justify-center items-center">
             <img src={logo} alt="logo" className="w-7 h-7 lg:w-10 lg:h-10" />
@@ -12,6 +15,7 @@ const Footer = () => {
             <p>&copy;{" "}{new Date().getFullYear()}{" "} All Right Reserve</p>
         </div>
     </footer>
+    </>
   )
 }
 

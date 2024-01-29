@@ -43,7 +43,7 @@ const NewsSection = ({ isHome }: NewsSectionProps) => {
 
   const amount: number = isHome ? 8 : 25;
   const skeletonArray = CreateArray(amount);
-  console.log(cryptoNews);
+  // console.log(cryptoNews);
 
   return (
     <div>

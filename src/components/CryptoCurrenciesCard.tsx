@@ -26,7 +26,7 @@ const CryptoCurrenciesCard = ({
   change,
 }: CryptoCurrenciesCardProps) => {
   return (
-    <Card>
+    <Card className="flex flex-col justify-between hover:dark:brightness-150">
       <CardHeader className="flex flex-row justify-between items-center">
         <CardTitle className=" text-balance">{name}</CardTitle>
         <img

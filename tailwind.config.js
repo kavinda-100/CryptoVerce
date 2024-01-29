@@ -78,6 +78,9 @@ module.exports = {
         palanquin: ['Palanquin', 'sans-serif'],
         montserrat: ['Montserrat', 'sans-serif'],
       },
+      backgroundImage: {
+        "hero": "url('src/assets/images/cryptocurrency-trading-strategies-main.jpg')",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

@@ -1,5 +1,5 @@
 import { ExchangesData } from "@/lib/types";
-import { CryptoExchangesDtaGenerator } from "@/lib/utils";
+import { CryptoExchangesDtaGenerator, cn } from "@/lib/utils";
 import { useEffect, useState, useMemo } from "react";
 
 // import {
@@ -41,7 +41,7 @@ const Exchanges = () => {
 
   if (loading) return <ExchangesSkeleton />;
 
-  if (error) return <Error message={JSON.stringify(error)}/>;
+  if (error) return <Error message={JSON.stringify(error)} />;
 
   return (
     <div className="w-full">
@@ -57,12 +57,22 @@ const Exchanges = () => {
         </TableHeader>
         <TableBody>
           {exchanges?.map((exchange) => (
-          <TableRow key={exchange.id}>
-            <TableCell>{exchange.id}. <span className=" font-bold font-montserrat" style={{color: exchange.color}}>{exchange.name}</span></TableCell>
-            <TableCell>{exchange.TradeVolume}</TableCell>
-            <TableCell>{exchange.market}</TableCell>
-            <TableCell>{exchange.changes}%</TableCell>
-          </TableRow>
+            <TableRow key={exchange.id}>
+              <TableCell>
+                {exchange.id}.{" "}
+                <span
+                  className={cn(
+                    exchange.color,
+                    "font-bold font-montserrat dark:text-white",
+                  )}
+                >
+                  {exchange.name}
+                </span>
+              </TableCell>
+              <TableCell>{exchange.TradeVolume}</TableCell>
+              <TableCell>{exchange.market}</TableCell>
+              <TableCell>{exchange.changes}%</TableCell>
+            </TableRow>
           ))}
         </TableBody>
       </Table>

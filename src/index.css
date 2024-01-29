@@ -13,6 +13,14 @@
   scroll-behavior: smooth;
 }
 
+.hero-heading {
+  font-size: 72px;
+  background: -webkit-linear-gradient(#6a27d6, #a855f7);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -67,5 +75,9 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  .bg-image {
+    background-image: url('./assets/images/hero-background.jpg');
+    @apply bg-cover bg-center bg-no-repeat w-full backdrop-brightness-75;
   }
 }
